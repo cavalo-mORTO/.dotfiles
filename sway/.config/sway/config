@@ -59,12 +59,17 @@ exec swayidle -w \
 #
 # Example configuration:
 #
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
+input type:touchpad {
+    dwt enabled
+    tap enabled
+    events disabled_on_external_mouse
+    scroll_method edge
+}
+
+input type:pointer {
+    scroll_factor 0.5
+}
+
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -214,11 +219,11 @@ bindsym XF86MonBrightnessUp exec light -T 1.1
 bindsym XF86MonBrightnessDown exec light -T 0.9
 bindsym XF86Display exec swaymsg output - dpms toggle
 
-bindsym XF86AudioRaiseVolume exec amixer set Master 3%+
-bindsym XF86AudioLowerVolume exec amixer set Master 3%-
-bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +3%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -3%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
-bindcode 474 exec swaymsg input "2:7:SynPS/2_Synaptics_TouchPad" events toggle
+bindcode 474 exec swaymsg input type:touchpad events toggle
 
 #
 # Status Bar:
@@ -250,6 +255,8 @@ input type:keyboard {
 }
 
 seat seat0 xcursor_theme Adwaita 28
+seat seat0 hide_cursor 3000
+seat seat0 hide_cursor when-typing enable
 
 exec_always {
     xsettingsd

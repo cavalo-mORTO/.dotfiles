@@ -3,5 +3,5 @@ set ifs "\n\t"
 map x $$f
 map X !$f
 
-map o &mimeopen $fx
-map O $mimeopen -d $fx
+map o &mimeopen $fx 2>/dev/null
+map O $mimeopen -d $fx 2>/dev/null

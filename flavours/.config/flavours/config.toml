@@ -27,6 +27,11 @@ template = 'alacritty'
 rewrite = true
 
 [[item]]
+file = '~/.zsh_colors'
+template = 'shell'
+rewrite = true
+
+[[item]]
 file = '~/.config/zathura/zathurarc'
 template = 'zathura'
 rewrite = true
@@ -54,36 +59,6 @@ light = false
 rewrite = true
 
 [[item]]
-file = '~/.config/qt5ct/colors/base16.conf'
-template = "qt5"
-rewrite = true
-
-[[item]]
-file = '~/.config/qt6ct/colors/base16.conf'
-template = "qt5"
-rewrite = true
-
-#[[item]]
-#file = '~/.Xresources'
-#template = 'xresources'
-#rewrite = false
-#start= '/* Start flavours */'
-#end = '/* End flavours */'
-#hook = 'xrdb -override ~/.Xresources'
-#
-#[[item]]
-#file = '~/.config/polybar/config'
-#template = 'polybar'
-#rewrite = false
-#start= '; Start flavours'
-#end = '; End flavours'
-#
-#[[item]]
-#file = '~/.config/rofi/themes/colors.rasi'
-#template = 'rofi'
-#rewrite = true
-
-[[item]]
 file = '~/.themes/FlatColor/colors2'
 template = 'gtk-flatcolor'
 subtemplate = 'gtk-2'
@@ -104,3 +79,11 @@ rewrite = false
 start= '# Start flavours'
 end = '# End flavours'
 hook = 'pgrep -x qutebrowser && qutebrowser :config-source'
+
+# [[item]]
+# file = '~/.Xresources'
+# template = 'xresources'
+# rewrite = false
+# start= '/* Start flavours */'
+# end = '/* End flavours */'
+# hook = 'xrdb -override ~/.Xresources'
