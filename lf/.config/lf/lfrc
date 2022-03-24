@@ -1,0 +1,7 @@
+set ifs "\n\t"
+
+map x $$f
+map X !$f
+
+map o &mimeopen $fx
+map O $mimeopen -d $fx

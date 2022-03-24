@@ -191,5 +191,3 @@ compinit -u -d "$compfile"
 # initialize prompt with a decent built-in theme
 promptinit
 prompt adam1
-
-export GAMEMODERUNEXEC="DXVK_FRAME_RATE=60 __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia"
