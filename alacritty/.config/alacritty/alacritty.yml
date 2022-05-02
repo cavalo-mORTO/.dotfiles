@@ -1,3 +1,8 @@
+font:
+  size: 12
+  normal:
+    family: SourceCodePro
+# start flavours
 # Base16 Nord - alacritty color config
 # arcticicestudio
 colors:
@@ -34,3 +39,4 @@ colors:
     white:   '0x8FBCBB'
 
 draw_bold_text_with_bright_colors: false
+# end flavours

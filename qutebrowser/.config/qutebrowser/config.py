@@ -1,3 +1,6 @@
+c.fonts.default_family = 'SourceCodePro'
+c.fonts.default_size = '10pt'
+
 c.content.blocking.adblock.lists = [ \
         "https://easylist.to/easylist/easylist.txt", \
         "https://easylist.to/easylist/easyprivacy.txt", \

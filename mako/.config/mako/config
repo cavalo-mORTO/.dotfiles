@@ -1,3 +1,5 @@
+font=SourceCodePro 12
+# start flavours
 ## Base16 Nord
 # Author: arcticicestudio
 #
@@ -16,3 +18,4 @@ border-color=#81A1C1
 background-color=#2E3440
 text-color=#BF616A
 border-color=#81A1C1
+# end flavours

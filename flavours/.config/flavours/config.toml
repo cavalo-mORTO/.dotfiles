@@ -24,7 +24,9 @@
 [[item]]
 file = '~/.config/alacritty/alacritty.yml'
 template = 'alacritty'
-rewrite = true
+rewrite = false
+start= '# start flavours'
+end = '# end flavours'
 
 [[item]]
 file = '~/.zsh_colors'
@@ -34,7 +36,9 @@ rewrite = true
 [[item]]
 file = '~/.config/zathura/zathurarc'
 template = 'zathura'
-rewrite = true
+rewrite = false
+start= '# start flavours'
+end = '# end flavours'
 
 [[item]]
 file = '~/.config/nvim/colors/base16.vim'
@@ -56,7 +60,9 @@ file = '~/.config/mako/config'
 template = "mako"
 hook = "makoctl reload"
 light = false
-rewrite = true
+rewrite = false
+start= '# start flavours'
+end = '# end flavours'
 
 [[item]]
 file = '~/.themes/FlatColor/colors2'

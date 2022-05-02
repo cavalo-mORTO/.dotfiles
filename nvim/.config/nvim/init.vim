@@ -34,6 +34,7 @@ augroup END
 
 call plug#begin()
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'soywod/himalaya', {'rtp': 'vim'}
 call plug#end()
 
 lua <<EOF
